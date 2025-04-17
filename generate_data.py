@@ -7,7 +7,9 @@ fake = Faker()
 DEPARTMENTS = ['Engineering', 'HR', 'Sales', 'Marketing', 'Finance']
 
 def generate_employees(n=100):
+    print("Hello")
     for _ in range(n):
+        print("Mohita")
         emp = Employee(
             name=fake.name(),
             department=random.choice(DEPARTMENTS),
