@@ -15,14 +15,11 @@ from app import db
 db.create_all()
 '''
 
+pip install -r requirements.txt
+
 On SQLITE Viewer u can see DB online
 
 '''Add jinja template engine'''
-
-
-
-
-
 
 http://localhost:5000/swagger → Swagger docs
 

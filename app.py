@@ -33,17 +33,12 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 #     if not Employee.query.first():
 #         generate_employees(200)
 
-# @app.route('/')
-# def dashboard():
-#     return render_template("dashboard.html")   
+  
 @app.route('/')
 def dashboard():
     employees = Employee.query.all()
     return render_template("dashboard.html", employees=employees)
 
-    
-
-# Create DB tables
 
 if __name__ == '__main__':
     with app.app_context():
